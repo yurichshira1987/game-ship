@@ -4,7 +4,7 @@ const http = require('http')
 const server = http.createServer(app)
 const io = require('socket.io')(server)
 
-const PORT = process.env.PORT || 2000
+const PORT = process.env.PORT || 3000
 
 app.use('/assets', express.static('assets'))
 app.use('/game.js', express.static('game.js'))
